@@ -69,6 +69,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="DetallesPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesPokemon.Designer.cs">
+      <DependentUpon>DetallesPokemon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaPokedex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPokedex.Designer.cs">
+      <DependentUpon>VentanaPokedex.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DetallesPokemon.resx">
+      <DependentUpon>DetallesPokemon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,6 +101,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VentanaPokedex.resx">
+      <DependentUpon>VentanaPokedex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
