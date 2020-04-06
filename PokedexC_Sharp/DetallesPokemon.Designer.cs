@@ -39,8 +39,8 @@
             this.altura = new System.Windows.Forms.Label();
             this.nombre = new System.Windows.Forms.Label();
             this.idPokemon = new System.Windows.Forms.Label();
-            this.descripcion = new System.Windows.Forms.TextBox();
             this.habilidad = new System.Windows.Forms.Label();
+            this.descripcion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPokemon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,7 +147,7 @@
             this.nombre.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.nombre.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombre.ForeColor = System.Drawing.Color.Lime;
-            this.nombre.Location = new System.Drawing.Point(175, 30);
+            this.nombre.Location = new System.Drawing.Point(175, 9);
             this.nombre.Name = "nombre";
             this.nombre.Size = new System.Drawing.Size(152, 40);
             this.nombre.TabIndex = 13;
@@ -163,28 +163,27 @@
             this.idPokemon.Size = new System.Drawing.Size(152, 40);
             this.idPokemon.TabIndex = 14;
             // 
-            // descripcion
-            // 
-            this.descripcion.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.descripcion.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descripcion.ForeColor = System.Drawing.Color.Lime;
-            this.descripcion.Location = new System.Drawing.Point(3, 333);
-            this.descripcion.Multiline = true;
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
-            this.descripcion.Size = new System.Drawing.Size(324, 122);
-            this.descripcion.TabIndex = 15;
-            // 
             // habilidad
             // 
             this.habilidad.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.habilidad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.habilidad.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habilidad.ForeColor = System.Drawing.Color.Lime;
-            this.habilidad.Location = new System.Drawing.Point(175, 70);
+            this.habilidad.Location = new System.Drawing.Point(175, 49);
             this.habilidad.Name = "habilidad";
-            this.habilidad.Size = new System.Drawing.Size(152, 40);
+            this.habilidad.Size = new System.Drawing.Size(152, 61);
             this.habilidad.TabIndex = 16;
+            // 
+            // descripcion
+            // 
+            this.descripcion.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.descripcion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.descripcion.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripcion.ForeColor = System.Drawing.Color.Lime;
+            this.descripcion.Location = new System.Drawing.Point(3, 330);
+            this.descripcion.Name = "descripcion";
+            this.descripcion.Size = new System.Drawing.Size(324, 128);
+            this.descripcion.TabIndex = 17;
             // 
             // DetallesPokemon
             // 
@@ -192,8 +191,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(331, 467);
-            this.Controls.Add(this.habilidad);
             this.Controls.Add(this.descripcion);
+            this.Controls.Add(this.habilidad);
             this.Controls.Add(this.idPokemon);
             this.Controls.Add(this.nombre);
             this.Controls.Add(this.peso);
@@ -209,7 +208,6 @@
             this.Text = "DetallesPokemon";
             ((System.ComponentModel.ISupportInitialize)(this.imagenPokemon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -226,7 +224,7 @@
         private System.Windows.Forms.Label altura;
         private System.Windows.Forms.Label nombre;
         private System.Windows.Forms.Label idPokemon;
-        private System.Windows.Forms.TextBox descripcion;
         private System.Windows.Forms.Label habilidad;
+        private System.Windows.Forms.Label descripcion;
     }
 }

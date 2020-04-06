@@ -25,17 +25,17 @@ namespace PokedexC_Sharp
             
             misPokemon = miConexion.getPokemonPorId(id);
             nombre.Text = misPokemon.Rows[0]["nombre"].ToString();
-            habilidad.Text = misPokemon.Rows[0]["habilidad"].ToString();
-            idPokemon.Text = misPokemon.Rows[0]["id"].ToString();
-            altura.Text = misPokemon.Rows[0]["altura"].ToString();
-            peso.Text = misPokemon.Rows[0]["peso"].ToString();
-            tipo1.Text = misPokemon.Rows[0]["tipo1"].ToString();
-            tipo2.Text = misPokemon.Rows[0]["tipo2"].ToString();
-            movimiento1.Text = misPokemon.Rows[0]["movimiento1"].ToString();
-            movimiento2.Text = misPokemon.Rows[0]["movimiento2"].ToString();
-            movimiento3.Text = misPokemon.Rows[0]["movimiento3"].ToString();
-            movimiento4.Text = misPokemon.Rows[0]["movimiento4"].ToString();
-            descripcion.Text = misPokemon.Rows[0]["descripcion"].ToString();
+            habilidad.Text ="Habilidad: " + misPokemon.Rows[0]["habilidad"].ToString();
+            idPokemon.Text = "ID:  " + misPokemon.Rows[0]["id"].ToString();
+            altura.Text = misPokemon.Rows[0]["altura"].ToString() + "m";
+            peso.Text = misPokemon.Rows[0]["peso"].ToString() + "kg";
+            tipo1.Text ="Tipo 1: " + misPokemon.Rows[0]["tipo1"].ToString();
+            tipo2.Text ="Tipo 2: " + misPokemon.Rows[0]["tipo2"].ToString();
+            movimiento1.Text ="1º " + misPokemon.Rows[0]["movimiento1"].ToString();
+            movimiento2.Text ="2º " + misPokemon.Rows[0]["movimiento2"].ToString();
+            movimiento3.Text ="3º " + misPokemon.Rows[0]["movimiento3"].ToString();
+            movimiento4.Text ="4º " + misPokemon.Rows[0]["movimiento4"].ToString();
+            descripcion.Text ="Descripción: " + misPokemon.Rows[0]["descripcion"].ToString();
             imagenPokemon.Image = convierteBlobImagen((byte[])misPokemon.Rows[0]["imagen"]);
         }
 
