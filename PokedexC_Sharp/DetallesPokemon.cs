@@ -18,7 +18,7 @@ namespace PokedexC_Sharp
         public DetallesPokemon()
         {
             InitializeComponent();
-            
+            infoPokemon(VentanaPokedex.idActual);
         }
         public void infoPokemon(int id)
         {

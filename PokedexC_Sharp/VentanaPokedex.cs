@@ -11,7 +11,7 @@ namespace PokedexC_Sharp
 
         Conexion miConexion = new Conexion();
         DataTable misPokemon = new DataTable();
-        int idActual = 0;
+        public static int idActual = 0;
         public VentanaPokedex()
         {
             InitializeComponent();
