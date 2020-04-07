@@ -73,5 +73,15 @@ namespace PokedexC_Sharp
             DetallesPokemon ventanaDetalles = new DetallesPokemon();
             ventanaDetalles.Show();
         }
+
+        private void registro_Click(object sender, EventArgs e)
+        {
+            Registro busqueda = new Registro();
+            busqueda.ShowDialog();
+            idActual = busqueda.idSeleccionado;
+            infoPokemon(idActual);
+
+            //MessageBox.Show(busqueda.idSeleccionado.ToString());
+        }
     }
 }

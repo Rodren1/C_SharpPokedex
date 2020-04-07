@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetallesPokemon));
             this.imagenPokemon = new System.Windows.Forms.PictureBox();
             this.tipo1 = new System.Windows.Forms.Label();
             this.tipo2 = new System.Windows.Forms.Label();
@@ -204,6 +205,7 @@
             this.Controls.Add(this.tipo2);
             this.Controls.Add(this.tipo1);
             this.Controls.Add(this.imagenPokemon);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DetallesPokemon";
             this.Text = "DetallesPokemon";
             ((System.ComponentModel.ISupportInitialize)(this.imagenPokemon)).EndInit();

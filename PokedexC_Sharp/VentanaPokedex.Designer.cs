@@ -30,6 +30,7 @@ namespace PokedexC_Sharp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPokedex));
             this.imagenPokemon = new System.Windows.Forms.PictureBox();
             this.nombrePokemon = new System.Windows.Forms.Label();
             this.BotonDch = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@ namespace PokedexC_Sharp
             this.especie = new System.Windows.Forms.Label();
             this.habitat = new System.Windows.Forms.Label();
             this.detalles = new System.Windows.Forms.Button();
+            this.registro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPokemon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,11 +68,11 @@ namespace PokedexC_Sharp
             // 
             this.BotonDch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BotonDch.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonDch.Location = new System.Drawing.Point(89, 377);
+            this.BotonDch.Location = new System.Drawing.Point(165, 313);
             this.BotonDch.Name = "BotonDch";
-            this.BotonDch.Size = new System.Drawing.Size(41, 37);
+            this.BotonDch.Size = new System.Drawing.Size(79, 39);
             this.BotonDch.TabIndex = 6;
-            this.BotonDch.Text = "→";
+            this.BotonDch.Text = ">";
             this.BotonDch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BotonDch.UseVisualStyleBackColor = true;
             this.BotonDch.Click += new System.EventHandler(this.BotonDch_Click);
@@ -79,11 +81,11 @@ namespace PokedexC_Sharp
             // 
             this.BotonIzq.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BotonIzq.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BotonIzq.Location = new System.Drawing.Point(11, 377);
+            this.BotonIzq.Location = new System.Drawing.Point(81, 313);
             this.BotonIzq.Name = "BotonIzq";
-            this.BotonIzq.Size = new System.Drawing.Size(41, 37);
+            this.BotonIzq.Size = new System.Drawing.Size(78, 39);
             this.BotonIzq.TabIndex = 5;
-            this.BotonIzq.Text = "← ";
+            this.BotonIzq.Text = "<";
             this.BotonIzq.UseVisualStyleBackColor = true;
             this.BotonIzq.Click += new System.EventHandler(this.BotonIzq_Click);
             // 
@@ -91,11 +93,11 @@ namespace PokedexC_Sharp
             // 
             this.Arriba.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Arriba.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arriba.Location = new System.Drawing.Point(52, 336);
+            this.Arriba.Location = new System.Drawing.Point(251, 313);
             this.Arriba.Name = "Arriba";
-            this.Arriba.Size = new System.Drawing.Size(37, 41);
+            this.Arriba.Size = new System.Drawing.Size(68, 39);
             this.Arriba.TabIndex = 7;
-            this.Arriba.Text = "↑";
+            this.Arriba.Text = ">>";
             this.Arriba.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Arriba.UseVisualStyleBackColor = true;
             this.Arriba.Click += new System.EventHandler(this.Arriba_Click);
@@ -104,11 +106,11 @@ namespace PokedexC_Sharp
             // 
             this.Abajo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Abajo.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Abajo.Location = new System.Drawing.Point(52, 414);
+            this.Abajo.Location = new System.Drawing.Point(12, 313);
             this.Abajo.Name = "Abajo";
-            this.Abajo.Size = new System.Drawing.Size(37, 41);
+            this.Abajo.Size = new System.Drawing.Size(63, 39);
             this.Abajo.TabIndex = 8;
-            this.Abajo.Text = "↓";
+            this.Abajo.Text = "<<";
             this.Abajo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Abajo.UseVisualStyleBackColor = true;
             this.Abajo.Click += new System.EventHandler(this.Abajo_Click);
@@ -139,7 +141,7 @@ namespace PokedexC_Sharp
             // 
             this.detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.detalles.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.detalles.Location = new System.Drawing.Point(179, 418);
+            this.detalles.Location = new System.Drawing.Point(12, 418);
             this.detalles.Name = "detalles";
             this.detalles.Size = new System.Drawing.Size(140, 37);
             this.detalles.TabIndex = 12;
@@ -147,12 +149,25 @@ namespace PokedexC_Sharp
             this.detalles.UseVisualStyleBackColor = true;
             this.detalles.Click += new System.EventHandler(this.detalles_Click);
             // 
+            // registro
+            // 
+            this.registro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.registro.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registro.Location = new System.Drawing.Point(179, 418);
+            this.registro.Name = "registro";
+            this.registro.Size = new System.Drawing.Size(140, 37);
+            this.registro.TabIndex = 13;
+            this.registro.Text = "Registro";
+            this.registro.UseVisualStyleBackColor = true;
+            this.registro.Click += new System.EventHandler(this.registro_Click);
+            // 
             // VentanaPokedex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(331, 467);
+            this.Controls.Add(this.registro);
             this.Controls.Add(this.detalles);
             this.Controls.Add(this.habitat);
             this.Controls.Add(this.especie);
@@ -162,6 +177,7 @@ namespace PokedexC_Sharp
             this.Controls.Add(this.BotonIzq);
             this.Controls.Add(this.nombrePokemon);
             this.Controls.Add(this.imagenPokemon);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaPokedex";
             this.Text = "VentanaPokedex";
             ((System.ComponentModel.ISupportInitialize)(this.imagenPokemon)).EndInit();
@@ -181,5 +197,6 @@ namespace PokedexC_Sharp
         private System.Windows.Forms.Label especie;
         private System.Windows.Forms.Label habitat;
         private System.Windows.Forms.Button detalles;
+        private System.Windows.Forms.Button registro;
     }
 }
